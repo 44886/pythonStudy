@@ -17,3 +17,12 @@ while True:  # 使用循环，这样可以不停让用户输入单词
     for i in word:
         sum = sum+ord(i)-96
     print('您输入的单词是:{},值为:{}%'.format(word, sum))
+
+
+'''
+另一种简单的方法，知乎上看的
+import string
+mydict = {x[0]:x[1] for x in zip(string.ascii_letters,range(1,27))}
+def chaword(str):
+    return sum([mydict[x.lower()] for x in str]) 
+'''
